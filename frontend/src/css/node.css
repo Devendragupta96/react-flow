@@ -1,0 +1,63 @@
+.container{
+    width: 200px;
+    height: auto;
+    padding: 10px 0px;
+}
+
+.container > div {
+    margin-bottom: 10px;
+}
+
+.dynamic-textarea {
+    width: 100%; /* Adjust width to container */
+    color:#32166b;
+    font-weight: 500;
+    background-color: #ffffff;
+    max-width: 100%; /* Prevent overflow beyond container */
+    min-height: 30px; /* Initial height (adjust as needed) */
+    padding: 2px;
+    border: 1px solid #c3c3c3;
+    border-radius: 6px;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    resize: none; /* Disable manual resizing */
+    box-sizing: border-box; /* Make padding count towards the width/height */
+    line-height: 1.5;
+    overflow: hidden;
+    transition: height 0.2s ease;
+  }
+  
+  /* Focused textarea styling */
+  .dynamic-textarea:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+  }
+
+  .select {
+    width: 100%;
+    padding: 2px;
+    min-height: 30px;
+    font-size: 14px;
+    background-color: #ffffff ;
+    border: 1px solid #c3c3c3;
+    border-radius: 6px;
+    color: #32166b;
+    font-weight: 500;
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Focused select styling */
+  .select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+    outline: none;
+  }
+  
+  /* Hover effect */
+  .select:hover {
+    border-color: #007bff;
+  }
